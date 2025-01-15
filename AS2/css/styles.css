@@ -5,7 +5,12 @@ body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #ffffff;
+  background-image: url('../images/background.png'); 
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-attachment: fixed; 
+  color: #333;
 }
 
 img {
@@ -21,11 +26,19 @@ h1, h2, h3 {
 
 /* Header Section */
 .header {
+  top: 0;
+  overflow: hidden;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
-  background-color: transparent; /* Gold */
+  padding: 10px 50px;
+  background-color: transparent;
+  
+}
+
+.logo{
+  width: 110px;
+  height: auto;
 }
 
 .nav {
@@ -89,24 +102,36 @@ h1, h2, h3 {
 }
 
 .header button:hover {
-  background-color: #e2ce75; /* Darker Blue */
+  background-color: #e2ce75;
 }
 
 /* Hero Section */
 .hero-section {
-  text-align: center;
-  padding: 50px 20px;
-  background-color: #c9ac55; /* Light Gray */
+  display: flex; 
+  justify-content: flex-start; 
+  align-items: center; 
+  color: #c9ac55; 
 }
 
-.hero-section h1 {
+.hero-section-details{ 
+  margin-left: 10%;
+  margin-right: 10%;
+}
 
-  font-size: 3em;
+.dog{
+  margin-top: 10%;
+  width: 30%;
+  height: auto;
+  
+}
+.hero-section h1 {
+  text-align: left;
+  font-size: 2em;
   margin-bottom: 20px;
 }
 
 .hero-section p {
-  font-size: 1.2em;
+  font-size: 1.0em;
   margin-bottom: 20px;
   color: #575757;
 }
@@ -117,7 +142,6 @@ h1, h2, h3 {
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
-  font-size: 1em;
   cursor: pointer;
   transition: background-color 0.3s;
 }
@@ -126,10 +150,11 @@ h1, h2, h3 {
   background-color: #0056b3;
 }
 
+
 /* About Section */
 .about-section {
   padding: 40px 20px;
-  background-color: #ffffff;
+  background-color: #c0c0c0;
   color: #333;
   text-align: center;
 }
@@ -227,13 +252,23 @@ h1, h2, h3 {
 
 /*Gift voucher*/
 .gift-voucher {
-  margin-top: 30px;
+  display: flex;
+  margin: 30px;
   text-align: center;
 }
 
 .gift-voucher img {
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.gift-voucher-container {
+  padding: 50px;
+  text-align: left;
+}
+
+.gift-voucher h1 {
+  text-align: left;
 }
 
 .gift-voucher button {
