@@ -6,7 +6,7 @@ body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
-  background-image: url('../images/a.png');
+  background-image: url('../images/bg.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -54,7 +54,7 @@ h1, h2, h3 {
 
 .nav a {
   text-decoration: none;
-  color: #8f8f8f;
+  color: #818181;
   font-size: 15px;
   padding: 25px;
   transition: background-color 0.3s;
@@ -146,6 +146,8 @@ h1, h2, h3 {
   align-items: center;
   color: #c9ac55;
   text-align:left;
+  
+  
 }
 
 .hero-section h1 {
@@ -157,15 +159,15 @@ h1, h2, h3 {
 .hero-section p {
   font-size: 1.2em;
   line-height: 0.5em;
-  color: #575757;
+  color: #333333;
   margin-bottom: 5%;
 }
 
 .hero-section button {
-  background-color: #ffffff;
-  color: #c9ac55;
+  background-color: #c9ac55;
+  color: #ffffff;
   padding: 10px 20px;
-  border: 2px solid #c9ac55;
+  border: 2px solid #ffffff;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s;
@@ -177,8 +179,6 @@ h1, h2, h3 {
 }
 
 
-
-
 /* About Section */
 .about-section {
   display: flex;
@@ -186,7 +186,7 @@ h1, h2, h3 {
   justify-content: center;
   align-items: center;
   padding: 20px 20px;
-  background-color: #e2ce75;
+  background-color: #f3f3f3;
   color: #333;
   text-align: center;
   flex-direction: column;
@@ -336,7 +336,7 @@ h1, h2, h3 {
   align-items: center; /* Center vertically */
   text-align: center;
   padding: 3%;
-  background-color: #e2ce75;
+  
 }
 
 /* Slider Container */
@@ -502,11 +502,16 @@ h1, h2, h3 {
   }
 
   /* Navigation Menu */
+
   .nav {
     display: none;
     flex-direction: column; /* Stack menu items vertically */
     gap: 10px;
     padding-top: 10px; /* Add some space at the top */
+  }
+
+  .booking {
+    display: none;
   }
 
   .menu-toggle {
