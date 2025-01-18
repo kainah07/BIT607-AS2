@@ -34,6 +34,7 @@ h1, h2, h3 {
   align-items: center;
   padding-left: 5%;
   padding-right: 5%;
+  background-color: #ffffff;
 }
 .logo {
   width: 110px;
@@ -53,14 +54,41 @@ h1, h2, h3 {
 
 .nav a {
   text-decoration: none;
-  color: #646464;
+  color: #8f8f8f;
   font-size: 15px;
-  padding: 20px;
+  padding: 25px;
   transition: background-color 0.3s;
 }
 
+.nav a:after,
+.nav a:before {
+  transition: all .5s;
+}
+
 .nav a:hover {
-  color: #b6b6b6;
+  color: #cfbeb3;; /* Blue */
+}
+
+.nav a{
+  position: relative;
+}
+
+.nav a::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #c2b280;
+  height: 3px;
+  
+}
+
+.nav a:hover::after {
+  width: 100%;
 }
 
 .booking {
