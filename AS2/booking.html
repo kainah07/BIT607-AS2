@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Now</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Damion&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+     <!--Navigation bar-->
+     <nav>
+      <ul class="sidebar">
+        <li onclick=hideSidebar()><button class="menu-toggle" aria-label="Toggle navigation">
+          <img src="images/menu-icon.png" alt="Menu icon" width="30" height="30">
+        </button></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a class="appointment-button" href="#">Book now</a></li>
+      </ul>      
+      <ul class="navigation-container">
+        <li><a class="logo-link" href="#"><img class="logo" src="images/logo-transparent.png" alt="logo"></a></li>
+        <li class="hideOnMobile"><a href="index.html">Home</a></li>
+        <li class="hideOnMobile"><a href="services.html">Services</a></li>
+        <li class="hideOnMobile"><a href="gallery.html">Gallery</a></li>
+        <li class="hideOnMobile"><a href="contact.html">Contact Us</a></li>
+        <li class="hideOnMobile"> <a class="appointment-button" href="#">Book now</a> </li>
+        <li onclick=showSidebar()><button class="menu-button" aria-label="Toggle navigation">
+          <img src="images/menu-icon.png" alt="Menu icon" width="30" height="30">
+        </button></li>
+      </ul>          
+    </nav>
+
+    <main class="booking-form-main">
+      <section class="booking-container">       
+        <div class="booking-form-container">
+          <form class="booking-form" action="">
+            <h2>Enter Your Details</h2>
+            <div class="names">
+              <label for="fname">First Name</label>
+              <label for="lname">Last Name</label>
+            </div>
+            <div class="names">
+              <input type="text" id="fname" name="fname" required>
+              <input type="text" id="lname" name="lname" required>
+            </div>
+            
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="dog-name">Dog details - Name - Breed - Age </label>
+            <textarea id="dog-name" name="dog-name" required rows="2"></textarea>
+            
+            <input type="submit" value="Submit">
+          </form>
+          
+          <div class="appointment-details">
+            <h3>Appointment Details</h3>
+            <p><strong>Service:</strong> Full Grooming</p>
+            <p><strong>Date:</strong> Monday, 2 April</p>
+            <p><strong>Time:</strong> 9 AM</p>
+            <p><strong>Dog's Name:</strong> Coco</p>
+            <p><strong>Location:</strong> Snazzy Paws</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    
+
+
+    <!--Footer-->
+    <footer>
+      <div class="footer-row-one">
+        <!--Column One-->
+        <div class="footer-container-one">
+          <img class="footer-logo" src="images/logo.png" alt="logo">
+          <div class="social-media-icons-conatiner">
+            <img class="facebook-icon" src="images/icons8-facebook-50.png" alt="Facebook icon">
+            <img class="instagram-icon" src="images/icons8-instagram-50.png" alt="Instagram icon">
+        </div>
+        </div>
+        <!--Column Two-->
+        <div class="footer-container-two">
+          <h3>About</h3>
+          <div class="contact-information">
+            <img src="images/location_on_24dp_B7B7B7_FILL0_wght400_GRAD0_opsz24.svg" alt="Location icon">
+            <p>Hamilton, New Zealand</p>
+          </div>
+          <div class="contact-information">
+            <img src="images/call_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg" alt="Contact number icon">
+            <p>64 023 067 95403</p>
+          </div>
+          <div class="contact-information">
+            <img src="images/mail_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg" alt="Email icon">
+            <p>snazzypawsgrooming@gmail.com</p>
+          </div>
+          <div class="contact-information">
+            <img src="images/schedule_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg" alt="Time icon">
+            <p>Monday - Saturday: 9AM - 5PM</p>
+          </div>
+        </div>
+        <!--Column Three-->
+        <div class="footer-container-three">
+          <h3>Quick links</h3>
+          <ul class="quick-links-container">
+            <li><a href="#">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        </div>
+      </div>
+      
+      <div class="footer-row-two">
+        <p>&copy; 2025 Snazzy Paws Grooming. All Rights Reserve</p>
+        <a href="">Privacy Policy</a>
+    </div>
+    </footer>
+  </body>
+</html>
