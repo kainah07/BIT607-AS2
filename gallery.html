@@ -1,43 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <!--fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Damion&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap" rel="stylesheet">
-    
-</head>
-<body>
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Gallery</title>
+      <link rel="stylesheet" href="css/styles.css">
+      <!--fonts-->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Damion&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap" rel="stylesheet">
+      
+  </head>
+  <body>
+
     <!--Navigation bar-->
     <nav>
-        <ul class="sidebar">
-          <li onclick=hideSidebar()><button class="menu-toggle" aria-label="Toggle navigation">
-            <img src="images/menu-icon.png" alt="Menu icon" width="30" height="30">
-          </button></li>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
-          <li><a class="appointment-button" href="booking.html">Book now</a></li>
-        </ul>      
-        <ul class="navigation-container">
-          <li><a class="logo-link" href="home.html"><img class="logo" src="images/logo-transparent.png" alt="logo"></a></li>
-          <li class="hideOnMobile"><a href="index.html">Home</a></li>
-          <li class="hideOnMobile"><a href="services.html">Services</a></li>
-          <li class="hideOnMobile"><a href="gallery.html">Gallery</a></li>
-          <li class="hideOnMobile"><a href="contact.html">Contact Us</a></li>
-          <li class="hideOnMobile"> <a class="appointment-button" href="booking.html">Book now</a> </li>
-          <li onclick=showSidebar()><button class="menu-button" aria-label="Toggle navigation">
-            <img src="images/menu-icon.png" alt="Menu icon" width="30" height="30">
-          </button></li>
-        </ul>          
-      </nav>
+      <ul class="sidebar">
+        <li class='close' onclick=hideSidebar()><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#c9ac55"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a class="appointment-button" href="booking.html">Book now</a></li>
+      </ul>      
+      <ul class="navigation-container">
+        <li><a class="logo-link" href="home.html"><img class="logo" src="images/logo-transparent.png" alt="logo"></a></li>
+        <li class="hideOnMobile"><a href="index.html">Home</a></li>
+        <li class="hideOnMobile"><a href="services.html">Services</a></li>
+        <li class="hideOnMobile"><a href="gallery.html">Gallery</a></li>
+        <li class="hideOnMobile"><a href="contact.html">Contact Us</a></li>
+        <li class="hideOnMobile"> <a class="appointment-button" href="booking.html">Book now</a> </li>
+        <li class="menu-button" onclick=showSidebar()><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#c9ac55"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></li>
+      </ul>          
+    </nav>
 
       <main class="gallery-main-container">
 
@@ -206,66 +203,66 @@
         </section>
       </main>
 
-   <!--Footer-->
-   <footer>
-    <div class="footer-row-one">
-      <!--Column One-->
-      <div class="footer-container-one">
-        <img class="footer-logo" src="images/logo.png" alt="logo">
-        <div class="social-media-icons-conatiner">
-          <img class="facebook-icon" src="images/icons8-facebook-50.png" alt="Facebook icon">
-          <img class="instagram-icon" src="images/icons8-instagram-50.png" alt="Instagram icon">
-      </div>
-      </div>
-      <!--Column Two-->
-      <div class="footer-container-two">
-        <h3>About</h3>
-        <div class="contact-information">
-          <img src="images/location_on_24dp_B7B7B7_FILL0_wght400_GRAD0_opsz24.svg" alt="Location icon">
-          <p>Hamilton, New Zealand</p>
+      <!--Footer-->
+      <footer>
+        <div class="footer-row-one">
+          <!--Column One-->
+          <div class="footer-container-one">
+            <img class="footer-logo" src="images/logo.png" alt="logo">
+            <div class="social-media-icons-conatiner">
+              <img class="facebook-icon" src="images/icons8-facebook-50.png" alt="Facebook icon">
+              <img class="instagram-icon" src="images/icons8-instagram-50.png" alt="Instagram icon">
+          </div>
+          </div>
+          <!--Column Two-->
+          <div class="footer-container-two">
+            <h3>About</h3>
+            <div class="contact-information">
+              <img src="images/location_on_24dp_B7B7B7_FILL0_wght400_GRAD0_opsz24.svg" alt="Location icon">
+              <p>Hamilton, New Zealand</p>
+            </div>
+            <div class="contact-information">
+              <img src="images/call_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg" alt="Contact number icon">
+              <p>64 023 067 95403</p>
+            </div>
+            <div class="contact-information">
+              <img src="images/mail_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg" alt="Email icon">
+              <p>snazzypawsgrooming@gmail.com</p>
+            </div>
+            <div class="contact-information">
+              <img src="images/schedule_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg" alt="Time icon">
+              <p>Monday - Saturday: 9AM - 5PM</p>
+            </div>
+          </div>
+          <!--Column Three-->
+          <div class="footer-container-three">
+          <h3>Quick links</h3>
+            <ul class="quick-links-container">
+              <li><a href="#">Home</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="#">Gallery</a></li>
+              <li><a href="#">Contact</a></li>
+          </ul>
+          </div>
         </div>
-        <div class="contact-information">
-          <img src="images/call_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg" alt="Contact number icon">
-          <p>64 023 067 95403</p>
-        </div>
-        <div class="contact-information">
-          <img src="images/mail_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg" alt="Email icon">
-          <p>snazzypawsgrooming@gmail.com</p>
-        </div>
-        <div class="contact-information">
-          <img src="images/schedule_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg" alt="Time icon">
-          <p>Monday - Saturday: 9AM - 5PM</p>
-        </div>
+        
+        <div class="footer-row-two">
+          <p>&copy; 2025 Snazzy Paws Grooming. All Rights Reserve</p>
+          <a href="">Privacy Policy</a>
       </div>
-      <!--Column Three-->
-      <div class="footer-container-three">
-       <h3>Quick links</h3>
-        <ul class="quick-links-container">
-          <li><a href="#">Home</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="#">Gallery</a></li>
-          <li><a href="#">Contact</a></li>
-      </ul>
-      </div>
-    </div>
-    
-    <div class="footer-row-two">
-      <p>&copy; 2025 Snazzy Paws Grooming. All Rights Reserve</p>
-      <a href="">Privacy Policy</a>
-  </div>
-  </footer>
+      </footer>
 
-  <script>
-    function showSidebar() {
-        const sidebar = document.querySelector('.sidebar')
-        sidebar.style.display = 'flex'
-      }
+      <script>
+        function showSidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+          }
 
-    function hideSidebar() {
-      const sidebar = document.querySelector('.sidebar')
-      sidebar.style.display = 'none'
-    }
-  </script>
-  
-</body>
+        function hideSidebar() {
+          const sidebar = document.querySelector('.sidebar')
+          sidebar.style.display = 'none'
+        }
+      </script>
+      
+  </body>
 </html>

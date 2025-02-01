@@ -12,28 +12,24 @@
   </head>
   <body>
 
-     <!--Navigation bar-->
-     <nav>
+    <!--Navigation bar-->
+    <nav>
       <ul class="sidebar">
-        <li onclick=hideSidebar()><button class="menu-toggle" aria-label="Toggle navigation">
-          <img src="images/menu-icon.png" alt="Menu icon" width="30" height="30">
-        </button></li>
+        <li class='close' onclick=hideSidebar()><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#c9ac55"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></li>
         <li><a href="index.html">Home</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Gallery</a></li>
-        <li><a href="#">Contact Us</a></li>
-        <li><a class="appointment-button" href="#">Book now</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a class="appointment-button" href="booking.html">Book now</a></li>
       </ul>      
       <ul class="navigation-container">
-        <li><a class="logo-link" href="#"><img class="logo" src="images/logo-transparent.png" alt="logo"></a></li>
+        <li><a class="logo-link" href="home.html"><img class="logo" src="images/logo-transparent.png" alt="logo"></a></li>
         <li class="hideOnMobile"><a href="index.html">Home</a></li>
         <li class="hideOnMobile"><a href="services.html">Services</a></li>
         <li class="hideOnMobile"><a href="gallery.html">Gallery</a></li>
         <li class="hideOnMobile"><a href="contact.html">Contact Us</a></li>
-        <li class="hideOnMobile"> <a class="appointment-button" href="#">Book now</a> </li>
-        <li onclick=showSidebar()><button class="menu-button" aria-label="Toggle navigation">
-          <img src="images/menu-icon.png" alt="Menu icon" width="30" height="30">
-        </button></li>
+        <li class="hideOnMobile"> <a class="appointment-button" href="booking.html">Book now</a> </li>
+        <li class="menu-button" onclick=showSidebar()><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#c9ac55"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></li>
       </ul>          
     </nav>
 
