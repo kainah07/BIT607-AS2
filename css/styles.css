@@ -1439,9 +1439,8 @@ footer p {
 
 }
 
-
 @media (max-width: 480px) {
-  
+
   .logo {
     width: 20%;
   }
