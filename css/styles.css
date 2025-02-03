@@ -113,9 +113,6 @@ nav li{
   width: 50%;
 }
 
-
-
-
 /*====================================== Side bar ======================================*/
 .menu-button {
   display: none;
@@ -578,9 +575,6 @@ nav li{
 }
 
 /*====================================== Services Page ======================================*/
-
-
-
 .educational-container {
   padding: 20px;
   display: flex;
@@ -885,18 +879,18 @@ div.desc p {
  
 }
 /*====================================== Contacts ======================================*/
-.contact-container h1 {
+.contact-form-section h1 {
   margin: 50px;
 }
 
-.contact-information{
+.container{
   display: flex;
   justify-content: left;
   padding: 5px;
   gap: 10px;
 }
 
-.contact-information img {
+.container img {
   width: 20px;
   height: auto;
 }
