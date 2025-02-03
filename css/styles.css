@@ -814,7 +814,7 @@ nav li{
 }
 
 
-#video {
+.video {
   padding: 30px;
   display: flex;
   flex-direction: column; 
@@ -823,17 +823,18 @@ nav li{
   background-size: cover;
 }
 
-#video h2 {
+.video h2 {
   margin-bottom: 50px; 
   color: #333333; 
   text-align: center;
 }
 
-#video iframe {
+.video iframe {
   width: 100%;
   max-width: 860px;
   height: auto;
   aspect-ratio: 16/9;
+  border-width: 0px;
 }
 
 .grid {
