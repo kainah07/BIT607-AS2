@@ -949,16 +949,14 @@ div.desc p {
   display: flex;
   justify-content: center;
   background-color: #fff;
-  border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  width: 800px;
+  width: 700px;
   margin: 50px auto;
 }
 
 /* Form Styles */
 .booking-form-container {
   display: flex;
-  gap: 10px;
   background-image: url('../images/white-background.png');
 }
 
@@ -983,14 +981,15 @@ div.desc p {
   flex: 1;
 }
 
-label {
+.form-group-booking label {
   font-size: 16px;
   color: #555;
   margin-bottom: 8px;
 }
 
-input[type="text"],
-input[type="email"] {
+.names input[type="text"],
+.form-group-booking input[type="text"],
+.form-group-booking input[type="email"] {
   padding: 10px;
   font-size: 16px;
   border: 1px solid #ccc;
@@ -999,7 +998,7 @@ input[type="email"] {
   margin-bottom: 20px;
 }
 
-textarea {
+.form-group-booking textarea {
   padding: 10px;
   font-size: 16px;
   border: 1px solid #ccc;
@@ -1009,7 +1008,7 @@ textarea {
   resize: none; /* Prevents users from resizing it */
 }
 
-input[type="submit"] {
+.form-group-booking input[type="submit"] {
   padding: 12px;
   width: 100%;
   font-size: 16px;
@@ -1021,7 +1020,7 @@ input[type="submit"] {
   transition: background-color 0.3s ease;
 }
 
-input[type="submit"]:hover {
+.form-group-booking  input[type="submit"]:hover {
   background-color: #dace99;
 }
 
@@ -1030,7 +1029,7 @@ input[type="submit"]:hover {
   width: 50%;
   padding: 20px;
   background-image: url('../images/bg.png');
-  border-radius: 8px;
+ 
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
 
@@ -1414,8 +1413,23 @@ footer p {
   }
 
   .booking-container {
-    width: 80%;
+    width: 100%;
+    
   }
+
+.names input[type="text"],
+.form-group-booking input[type="text"],
+.form-group-booking input[type="email"] {
+  width: 100%; 
+}
+
+.form-group-booking textarea { 
+  width: 100%;
+}
+
+.form-group-booking input[type="submit"] {
+  width: 100%;
+}
 
   .booking-form {
     width: 80%;
@@ -1424,7 +1438,8 @@ footer p {
 
   .appointment-details {
     padding: 40px;
-     width: 60%;
+    width: 80%;
+    height: 100%;
   }
   
   .footer-row-one {
@@ -1576,13 +1591,7 @@ footer p {
   }
 
   /*================== Booking form ==================*/
-  .booking-form-main { 
-    width: 100%;
-    height: 100%;
-    display: flex;
-    text-align: center;
-    align-items: center;
-  }
+  
 
   .booking-container {
     padding: 10px;
@@ -1605,6 +1614,7 @@ footer p {
   .appointment-details {
     text-align: left;
     width: 100%;
+    height: 100%;
   }
   
   /*================== Footer ==================*/
