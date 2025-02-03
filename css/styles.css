@@ -950,18 +950,18 @@ div.desc p {
   justify-content: center;
   background-color: #fff;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  width: 700px;
+  width: 600px;
   margin: 50px auto;
 }
 
-/* Form Styles */
 .booking-form-container {
   display: flex;
   background-image: url('../images/white-background.png');
+  align-items: center;
 }
 
 .booking-form {
-  margin: 50px;
+  margin: 40px;
 }
 
 .booking-form h2{
@@ -1005,7 +1005,7 @@ div.desc p {
   border-radius: 4px;
   width: 100%;
   margin-bottom: 20px;
-  resize: none; /* Prevents users from resizing it */
+
 }
 
 .form-group-booking input[type="submit"] {
@@ -1027,15 +1027,15 @@ div.desc p {
 /* Appointment Details */
 .appointment-details {
   width: 50%;
+  height: 100%;
   padding: 20px;
   background-image: url('../images/bg.png');
- 
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
 
-.appointment-details h3 {
-  color: #ffffff;
-  margin-bottom: 10px;
+.con-details {
+  padding: 5px;
+  background-color: #ffffff;
 }
 
 .appointment-details p {
@@ -1413,26 +1413,26 @@ footer p {
   }
 
   .booking-container {
-    width: 100%;
+    width: 85%;
     
   }
 
-.names input[type="text"],
-.form-group-booking input[type="text"],
-.form-group-booking input[type="email"] {
-  width: 100%; 
-}
+  .names input[type="text"],
+  .form-group-booking input[type="text"],
+  .form-group-booking input[type="email"] {
+    width: 100%; 
+  }
 
-.form-group-booking textarea { 
-  width: 100%;
-}
+  .form-group-booking textarea { 
+    width: 100%;
+  }
 
-.form-group-booking input[type="submit"] {
-  width: 100%;
-}
+  .form-group-booking input[type="submit"] {
+    width: 100%;
+  }
 
   .booking-form {
-    width: 80%;
+    width: 100%;
    
   }
 
