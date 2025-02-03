@@ -10,7 +10,7 @@ body {
   height: 100%;
   font-family: 'Roboto', sans-serif;
   line-height: 1.6;
-  color: #333;
+  color: #363636;
   background-image:url('../images/main-background.png');
   background-size: cover;
   background-repeat: no-repeat;
@@ -34,15 +34,20 @@ p {
 
 h1, h2 {
   font-family: 'Damion', cursive;
-  color: #333;
+  color: #363636;
   text-align: center;
 }
 
 /*====================================== Navigation bar ======================================*/
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+}
+
 nav {
-  padding: 30px;
-  
-  
+  overflow: hidden;
 }
 
 /* Logo size*/
@@ -64,29 +69,30 @@ nav li{
   height: 50px;
 }
 
-nav a {
+.nav-container a {
+  background-color: transparent;
   height: 100%;
   padding: 0 30px;
   text-decoration: none; 
   display: flex;
   align-items: center;
-  color: #4A4A4A ;
+  color: #363636 ;
   transition: background-color 0.3s;
 }
 
-nav a::after,
-nav a::before {
+.nav-container a::after,
+.nav-container a::before {
   transition: all .5s;
 }
-nav a:hover {
+.nav-container a:hover {
   color:#dace99;
 }
 
-nav a {
+.nav-container a {
   position: relative;
 }
 
-nav a::after {
+.nav-container a::after {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -99,26 +105,16 @@ nav a::after {
   height: 3px;
 }
 
-nav a:hover::after {
-  width:100%;
+.nav-container a:hover::after{
+  width:50%;
 }
 
-.logo-link {
-  pointer-events: none;
-  cursor: default; 
+.nav-container a.active::after {
+  width: 50%;
 }
 
-.logo-link:hover {
-  background-color: transparent; 
-  color: inherit;
-}
 
-nav li:first-child {
-  margin-right: auto;
-}
-nav li:nth-child(6) {
-  margin-left: auto;
-}
+
 
 /*====================================== Side bar ======================================*/
 .menu-button {
@@ -141,7 +137,17 @@ nav li:nth-child(6) {
 }
 
 .sidebar li {
+  padding: 20px;
   width: 100%;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: #363636;
+}
+
+.sidebar a:hover {
+  color: #c9ac55;
 }
 
 .close {
@@ -152,8 +158,8 @@ nav li:nth-child(6) {
 }
 
 /*====================================== Buttons ======================================*/
-/* Appointment button */
-.appointment-button {
+/* Appointment button header */
+.appointment-button-header {
   font-size: 15px;
   text-decoration: none;
   background-color: #c9ac55;
@@ -161,20 +167,38 @@ nav li:nth-child(6) {
   padding: 12px 30px;
   border-radius: 5px;
   cursor: pointer;
+  transition: background-color 0.5s;
+}
+
+.appointment-button-header:hover {
+  color: #c9ac55;
+  border: 2px solid #c9ac55;
+  background-color: transparent;
+}
+
+/* Appointment button */
+.appointment-button {
+  font-size: 15px;
+  text-decoration: none;
+  background-color: #c9ac55;
+  color: #ffffff;
+  padding: 12px 25px;
+  border-radius: 5px;
+  cursor: pointer;
   transition: background-color 0.3s;
 }
 
 .appointment-button:hover {
-  color: #ffffff;
+  color: #c9ac55;
   border: 2px solid #c9ac55;
-  background-color: #dace99;
+  background-color: transparent;
 }
 
 .border-button {
   text-decoration: none;
   background-color: #ffffff;
   color: #c9ac55;
-  padding: 12px 35px;
+  padding: 12px 30px;
   border: 2px solid #c9ac55;
   border-radius: 5px;
   cursor: pointer;
@@ -209,7 +233,7 @@ nav li:nth-child(6) {
   margin-top: 10px;
   background-color: #c9ac55; 
   color: white;
-  padding: 12px 35px;
+  padding: 12px 30px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -340,9 +364,15 @@ nav li:nth-child(6) {
   width: 100%; 
   max-width: 250px;
   height: auto;
-  margin-bottom: 20px;
-  
+  margin-bottom: 20px; 
+  transition: transform 0.4s ease-in-out;
 }
+
+.packages-container img:hover {
+  transform: scale(1.1);
+}
+
+
 
 /* Gift voucher */
 .gift-voucher-container {
@@ -549,9 +579,7 @@ nav li:nth-child(6) {
 
 /*====================================== Services Page ======================================*/
 
-.snazzy-paws {
-  margin: 30px;
-}
+
 
 .educational-container {
   padding: 20px;
@@ -586,7 +614,6 @@ nav li:nth-child(6) {
 
 /*Grooming services*/
 .dog-grooming-section {
- 
   padding: 50px;
 }
 
@@ -596,12 +623,11 @@ nav li:nth-child(6) {
 }
 
 .dog-grooming-container{
-  background-image:url('../images/background.png');
+  background-image:url('../images/white-background.png');
   background-size: cover;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   margin-top: 100px;
   border-radius: 25px;
-  padding: 50px;
 }
 
 .dog-grooming-contain h2{
@@ -629,7 +655,6 @@ nav li:nth-child(6) {
 
 .row{
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-around;
 
 }
@@ -826,7 +851,7 @@ nav li:nth-child(6) {
 div.gallery {
   margin: 5px;
   float: left;
-  width: 300px;
+  width: 200px;
   background-color: #ffffff;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -905,22 +930,24 @@ div.desc p {
 
 .map-container {
   display: flex;
-  justify-content: center; /* Centers horizontally */
-  align-items: center; /* Centers vertically */
-  width: 100%; /* Full width */
-  height: 100vh; /* Full viewport height */
-  box-sizing: border-box; /* Prevent padding/margin issues */
+  justify-content: center; 
+  align-items: center; 
+  width: 100%; 
+  height: 100vh; 
+  box-sizing: border-box;
 }
 
 .map-container iframe {
-  width: 100%; /* Adjust to fill the parent container */
-  height: 600px; /* Set a fixed height or use percentages */
-  max-width: 1000px; /* Optional: Limit the width */
+  width: 100%; 
+  height: 600px; 
+  max-width: 1000px; 
   border: 0;
 }
-/*====================================== Footer ======================================*/
+/*====================================== Booking ======================================*/
 
 .booking-container {
+  display: flex;
+  justify-content: center;
   background-color: #fff;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -945,7 +972,15 @@ div.desc p {
 
 .names {
   display: flex;
-  gap: 20px;
+  gap: 10px;
+}
+
+.names label {
+  flex: 1;
+}
+
+.names input {
+  flex: 1;
 }
 
 label {
@@ -975,7 +1010,8 @@ textarea {
 }
 
 input[type="submit"] {
-  padding: 12px 200px;
+  padding: 12px;
+  width: 100%;
   font-size: 16px;
   background-color: #c9ac55;
   color: #fff;
@@ -991,7 +1027,7 @@ input[type="submit"]:hover {
 
 /* Appointment Details */
 .appointment-details {
-  width: 500px;
+  width: 50%;
   padding: 20px;
   background-image: url('../images/bg.png');
   border-radius: 8px;
@@ -999,13 +1035,11 @@ input[type="submit"]:hover {
 }
 
 .appointment-details h3 {
-  font-size: 20px;
   color: #ffffff;
   margin-bottom: 10px;
 }
 
 .appointment-details p {
-  font-size: 16px;
   color: #ffffff;
   margin: 5px 0;
 }
@@ -1023,6 +1057,10 @@ footer {
 footer h3 {
   font-size: 20px;
   margin-bottom: 10px;
+}
+
+footer p {
+  color: #ffffff;
 }
 
 .footer-row-one {
@@ -1075,7 +1113,7 @@ footer h3 {
 }
 
 .quick-links-container a:hover {
-  color: #ffffff;
+  color: #363636;
 }
 
 .footer-row-two {
@@ -1095,7 +1133,7 @@ footer h3 {
 }
 
 .footer-row-two a:hover{
-  color: #ffffff;
+  color: #363636;
 }
 
 /*====================================== Media ======================================*/
@@ -1104,9 +1142,19 @@ footer h3 {
     display: none;
   }
 
-  nav ul{
-    flex-direction: row-reverse;
-    
+  .appointment-button-header{
+    display: none;
+  }
+
+  header {
+    display: inline-flex;
+    flex-direction: row-reverse; 
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .logo {
+    background-color: #ffffff83;
   }
 
   .menu-button {
@@ -1118,18 +1166,40 @@ footer h3 {
 
 @media only screen and (max-width: 768px){
 
-  header {
-    flex-direction:row-reverse;
-    justify-content: left;
-    padding: 10px;
-    gap: 20px;
-    background-color: #f0efef;
+  /*================== Font size ==================*/
+  h1 {
+    font-size: 2.5em; 
   }
 
-  header .appointment-button {
-    display: none;
+  h2 {
+    font-size: 1.8em; 
   }
 
+  p {
+    font-size: 1em; 
+  }
+
+  .hero-section p {
+    font-size: 1em;
+  }
+
+  .about-us-contents p {
+    font-size: 1em;
+    
+  }
+
+  .logo {
+    width: 30%;
+  }
+
+
+  /*================== Buttons ==================*/
+  .appointment-button {
+    padding: 10px 20px;
+    
+  }
+  
+  /*================== Hero section ==================*/
   .hero-section {
     margin-top: 50px;
     flex-direction: column;
@@ -1137,24 +1207,12 @@ footer h3 {
   }
 
   .hero-section h1 {
-    font-size: 2em; /* Slightly smaller font size */
-    margin-bottom: 15px; /* Reduced spacing */
-    
-  }
-
-  .hero-section p {
-    font-size: 0.875em;
-    
+    text-align: center;
   }
 
   .hero-text-container {
     margin-bottom: 10px;
-    
-  }
-
-  .hero-section .appointment-button {
-    padding: 5px 10px;
-    
+    text-align: center;
   }
 
   .hero-section img {
@@ -1216,12 +1274,16 @@ footer h3 {
     flex-direction: column-reverse;
   }
 
+  .tips-container {
+    padding: 20px;
+  }
+
   .tips-container,  .tips-container h2{
     text-align: center;
   }
 
   .educational-container img {
-    width: 500px;
+    width: 300px;
   }
 
   .dog-grooming-section{
@@ -1297,7 +1359,6 @@ footer h3 {
     margin-bottom: 15px;
   }
 
-
   .contact-form-container {
     flex-direction: column;                            
     width: 80%;
@@ -1351,52 +1412,44 @@ footer h3 {
   .map-container iframe {
     height: 400px;
   }
-  
+
+  .booking-container {
+    width: 80%;
+  }
+
+  .booking-form {
+    width: 80%;
+   
+  }
+
+  .appointment-details {
+    padding: 40px;
+     width: 60%;
+  }
   
   .footer-row-one {
     flex-direction:column;
-  }
-
-  .footer-row-one h3 {
-    font-size: 1.875em;
-  }
-
-  .footer-container-two p, .footer-container-three a{
-    font-size: 1em;
-  }
-
-  .footer-row-one p{
-    font-size: 1em;
   }
 
 }
 
 
 @media (max-width: 480px) {
-
-  header {
-    flex-direction:row-reverse;
-    justify-content: left;
-    padding: 10px;
-    gap: 20px;
-    background-color: #f0efef;
+  .logo {
+    width: 20%;
   }
-  
+  /*================== Sidebar ==================*/
   .sidebar{
-    width: 50%;
+    padding: 10px;
+    width: 100%;
   }
 
+  /*================== Hero section ==================*/
   .hero-section {
     margin-top: 50px;
     margin-left: 15px;
     margin-right: 15px;
     flex-direction: column;
-    text-align: center;
-  }
-
-  .hero-section h1 {
-    font-size: 2em; 
-    margin-bottom: 20px; 
     text-align: center;
   }
 
@@ -1420,11 +1473,7 @@ footer h3 {
     
   }
 
-  .testimonial-section {
-    margin: 0px;
-  
-  }
-
+  /*================== Testimony section ==================*/
   .testimony-container {
     padding: 15px;
     width: 250px;
@@ -1440,7 +1489,7 @@ footer h3 {
     height: 50%;
   }
   
-
+  /*================== Story section ==================*/
   .story-container {
     padding: 50px;
     align-items: center;
@@ -1455,10 +1504,29 @@ footer h3 {
     width: 100%;
   }
 
-  .dog-grooming-services-container {
-    width: 10px;
+  .services-container {
+    text-align: center;
   }
 
+  .what-we-offer-section {
+    margin: 0px;
+  }
+
+  /*================== Dog grooming section ==================*/
+  .dog-grooming-section {
+    padding: 5px;
+  }
+
+  .dog-grooming-services-container {
+    width: 100%;
+  }
+
+  /*================== Contact section ==================*/
+  .contact-form-container {
+    width: 100%;
+  }
+
+  /*================== Gallery ==================*/
   #video iframe {
     max-width: 100%; 
     height: auto;
@@ -1482,6 +1550,11 @@ footer h3 {
     font-size: 0.9rem;
   }
 
+  /*================== Contact form ==================*/
+  .form-contact-container {
+    width: 100%;
+  }
+
   .form-group input,
   .form-group textarea {
     width: 100%;
@@ -1498,25 +1571,44 @@ footer h3 {
   }
 
   .map-container iframe {
-    height: 300px;
+    padding: 5px;
+    height: 100%;
+  }
+
+  /*================== Booking form ==================*/
+  .booking-form-main { 
+    width: 100%;
+    height: 100%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+  }
+
+  .booking-container {
+    padding: 10px;
+    margin: 0px;
+    width: 100%;
+   
+  }
+
+  .booking-form-container {
+    flex-direction: column-reverse;
+   
+  }
+
+  .booking-form {
+    text-align: left;
+    width: 70%;
+    
+  }
+
+  .appointment-details {
+    text-align: left;
+    width: 100%;
   }
   
-  
+  /*================== Footer ==================*/
   .footer-row-one {
     flex-direction:column;
   }
-
-  .footer-row-one h3 {
-    font-size: 1.875em;
-  }
-
-  .footer-container-two p, .footer-container-three a{
-    font-size: 1em;
-  }
-
-  .footer-row-one p{
-    font-size: 1em;
-  }
-
-
 }
