@@ -879,7 +879,7 @@ div.desc p {
   justify-content: center;
  
 }
-/*====================================== Contacts ======================================*/
+/*====================================== Contact ======================================*/
 .contact-form-section h1 {
   margin: 50px;
 }
@@ -912,12 +912,12 @@ div.desc p {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.contacts-details {
+.contact-details-container {
   padding: 50px;
   background-image:url('../images/white-background.png');
 }
 
-.contacts-details h2{
+.contact-details-container h2{
  font-family: 'Roboto', sans-serif;
  color: #000000;
   text-align: left;
@@ -1214,13 +1214,10 @@ footer p {
     
   }
 
+  /*================== About us section ==================*/
   .contacts-container {
     flex-direction: column;
     gap: 0px;
-  }
-  .testimonial-section {
-    flex-direction: column; 
-    align-items: center; 
   }
 
   .gift-voucher-container img {
@@ -1229,6 +1226,12 @@ footer p {
 
    .gift-voucher-details, .gift-voucher-details h2 {
     text-align: center;
+  }
+
+  /*================== Testimonials section ==================*/
+  .testimonial-section {
+    flex-direction: column; 
+    align-items: center; 
   }
 
   .testimony-container {
@@ -1246,6 +1249,7 @@ footer p {
     height: 50%;
   }
 
+  /*================== Story section ==================*/
   .background-story-section {
     padding: 0%;
   }
@@ -1264,6 +1268,7 @@ footer p {
     width: 400px;
   }
 
+  /*================== Educational section ==================*/
   .educational-container {
     flex-direction: column-reverse;
   }
@@ -1280,11 +1285,12 @@ footer p {
     width: 300px;
   }
 
+  /*================== Grooming services section ==================*/
   .dog-grooming-section{
     text-align: center;
   }
 
-  .dog-grooming-section h1{
+  .dog-grooming-section h2{
     text-align: center;
   }
 
@@ -1322,6 +1328,7 @@ footer p {
     width: 90%;;
   }
 
+  /*================== Gallery page ==================*/
   .con-text-container {
     padding: 20px;
     text-align: center;     
@@ -1339,7 +1346,7 @@ footer p {
     color: #333333;
   }
 
-  #video iframe {
+  .video iframe {
     max-width: 100%; 
     height: auto;
   }
@@ -1353,6 +1360,7 @@ footer p {
     margin-bottom: 15px;
   }
 
+  /*================== Contact ==================*/
   .contact-form-container {
     flex-direction: column;                            
     width: 80%;
@@ -1378,35 +1386,22 @@ footer p {
   .form-contact-container {
     width: 80%;
     margin: 100px auto;
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
 
   .form {
     margin: 30px;
   }
 
-  .contacts-details {
+  .contact-details-container {
     padding: 30px;
-  }
-
-  .contacts-details h2 {
-    font-size: 1.2rem;
-  }
-
-  .contact-information {
-    
-    align-items: flex-start;
-    margin-bottom: 10px;
-  }
-
-  .contact-information img {
-    margin-right: 10px;
   }
 
   .map-container iframe {
     height: 400px;
   }
 
+   /*================== Booking==================*/
   .booking-container {
     width: 85%;
     
@@ -1436,7 +1431,8 @@ footer p {
     width: 80%;
     height: 100%;
   }
-  
+
+   /*================== Footer ==================*/
   .footer-row-one {
     flex-direction:column;
   }
@@ -1445,6 +1441,7 @@ footer p {
 
 
 @media (max-width: 480px) {
+  
   .logo {
     width: 20%;
   }
@@ -1531,11 +1528,6 @@ footer p {
     width: 100%;
   }
 
-  /*================== Contact section ==================*/
-  .contact-form-container {
-    width: 100%;
-  }
-
   /*================== Gallery ==================*/
   #video iframe {
     max-width: 100%; 
@@ -1560,7 +1552,11 @@ footer p {
     font-size: 0.9rem;
   }
 
-  /*================== Contact form ==================*/
+  /*================== Contact ==================*/
+  .contact-form-container {
+    width: 100%;
+  }
+
   .form-contact-container {
     width: 100%;
   }
@@ -1586,8 +1582,6 @@ footer p {
   }
 
   /*================== Booking form ==================*/
-  
-
   .booking-container {
     padding: 10px;
     margin: 0px;
