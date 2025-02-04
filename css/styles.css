@@ -1155,8 +1155,8 @@ footer p {
   }
 
   .logo {
-    width: 30%;
-    height: 30%;
+    width: 80%;
+    height: 80%;
   }
 
 
@@ -1417,11 +1417,7 @@ footer p {
 }
 
 @media (max-width: 480px) {
-
-  .logo {
-    width: 25%;
-    height: 25%;
-  }
+  
   /*================== Sidebar ==================*/
   .sidebar{
     padding: 10px;
