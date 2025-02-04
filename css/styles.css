@@ -11,7 +11,7 @@ body {
   font-family: 'Roboto', sans-serif;
   line-height: 1.6;
   color: #363636;
-  background-image:url('../images/main-bg\ \(1\).png');
+  background-image:url('../images/main-background.webp');
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -82,7 +82,7 @@ nav li{
   transition: all .5s;
 }
 .nav-container a:hover {
-  color:#dace99;
+  color:#c9ac55;
 }
 
 .nav-container a {
@@ -98,7 +98,7 @@ nav li{
   width: 0%;
   content: '.';
   color: transparent;
-  background: #dace99;
+  background: #c9ac55;
   height: 3px;
 }
 
@@ -296,7 +296,7 @@ nav li{
   justify-content: center;
   align-items: center;
   padding: 20px 20px;
-  background-image: url('../images/yellow-background.png');
+  background-image: url('../images/yellow-background.webp');
   background-size: cover;
   color: #333;
   text-align: center;
@@ -336,7 +336,7 @@ nav li{
 .services-section {
   padding: 40px 20px; 
   text-align: center;
-  background-image: url('../images/background\(2\).webp');
+  background-image: url('../images/background-\(3\).webp');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -408,7 +408,7 @@ nav li{
   align-items: center; 
   text-align: center;
   padding: 3%;
-  background-image: url('../images/background\(3\).webp');
+  background-image: url('../images/background-\(5\).webp');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -522,7 +522,7 @@ nav li{
 /*====================================== Story Section ======================================*/
 .background-story-section {
   padding: 50px;
-  background-image: url('../images/background\(2\).webp');
+  background-image: url('../images/background-\(4\).webp');
   background-repeat: no-repeat;
   background-size: cover;
 }
