@@ -1170,8 +1170,8 @@ footer p {
   }
 
   .gift-voucher-container img {
-    width: 80%;
-    height: 80%;
+    width: 70%;
+    height: 70%;
   }
 
    .gift-voucher-details, .gift-voucher-details h2 {
@@ -1207,35 +1207,27 @@ footer p {
   }
 
   .story-container {
-    padding: 50px;
     align-items: center;
-    flex-direction: column;
+    
   }
 
   .story-container img {
-    width: 100%;
-    height: 60%;
+    width: 50%;
+  
   }
 
   .story-content {
-    width: 400px;
+    width: 80%;
   }
 
   /*================== Educational section ==================*/
-  .educational-container {
-    flex-direction: column-reverse;
-  }
-
-  .tips-container {
-    padding: 20px;
-  }
-
-  .tips-container,  .tips-container h2{
-    text-align: center;
-  }
-
   .educational-container img {
-    width: 300px;
+    width: 50%;
+    height: 50%;
+  }
+
+  .educational-container p {
+    margin: 5px;
   }
 
   /*================== Grooming services section ==================*/
@@ -1480,6 +1472,24 @@ footer p {
 
   .story-content {
     width: 100%;
+  }
+
+  .educational-container {
+    flex-direction: column-reverse;
+  }
+
+  .educational-container img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .tips-container {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .tips-container h2 {
+    text-align: center;
   }
 
   /*================== Dog grooming section ==================*/
