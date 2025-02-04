@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Snazzy Paws Grooming</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <!--fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Damion&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+   
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Damion&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+ 
+     <!-- Link to your main stylesheet -->
+     <link rel="stylesheet" href="css/styles.css">
+    <link rel="preload" href="images/bg.webp" as="image" type="image/webp" />
   </head>
   <body>
 
@@ -115,7 +118,7 @@
         </div>
 
         <!--Navigate to the services page-->
-        <a class="border-button-small" href="#">View more</a>
+        <a class="border-button-small" href="services.html">View more</a>
 
         <!--Gift Voucher-->
         <div class="gift-voucher-container">
@@ -161,9 +164,9 @@
 
 
           <!--Slider arrow buttons-->
-          <a class="prev" onclick="plusSlides(-1)">❮</a>
-          <a class="next" onclick="plusSlides(1)">❯</a>
-
+          <a class="prev" href="#" onclick="plusSlides(-1); return false;">❮</a>
+          <a class="next" href="#" onclick="plusSlides(1); return false;">❯</a>
+          
           <!--Indicators-->
           <div style="text-align:center">
             <span class="dot" onclick="currentSlide(1)"></span> 
