@@ -11,7 +11,7 @@ body {
   font-family: 'Roboto', sans-serif;
   line-height: 1.6;
   color: #363636;
-  background-image:url('../images/main-background.png');
+  background-image:url('../images/main-background.webp');
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -299,7 +299,7 @@ nav li{
   justify-content: center;
   align-items: center;
   padding: 20px 20px;
-  background-image: url('../images/bg.png');
+  background-image: url('../images/bg.webp');
   background-size: cover;
   color: #333;
   text-align: center;
@@ -339,7 +339,7 @@ nav li{
 .services-section {
   padding: 40px 20px; 
   text-align: center;
-  background-image: url('../images/background(2).png');
+  background-image: url('../images/background\(2\).webp');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -413,7 +413,7 @@ nav li{
   align-items: center; 
   text-align: center;
   padding: 3%;
-  background-image: url('../images/background(3).png');
+  background-image: url('../images/background\(3\).webp');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -528,7 +528,7 @@ nav li{
 /*====================================== Story Section ======================================*/
 .background-story-section {
   padding: 50px;
-  background-image: url('../images/background(2).png');
+  background-image: url('../images/background\(2\).webp');
   background-repeat: no-repeat;
   background-size: cover;
 }
