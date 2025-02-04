@@ -15,12 +15,11 @@
   </head>
   <body>
 
-    <!--Navigation bar-->
     <header>
-      <a href="index.html"><img class="logo" src="images/logo-transparent.svg" width="100px" height="100px" alt="logo"></a>
+      <a href="index.html"><img class="logo" src="images/logo-transparent.svg" alt="logo"></a>
       <nav>
         <ul class="sidebar">
-          <li class='close' onclick=hideSidebar()><svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#c9ac55"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></li>
+          <li class='close' onclick=hideSidebar()><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#c9ac55"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></li>
           <li><a href="index.html">Home</a></li>
           <li><a href="services.html">Services</a></li>
           <li><a href="gallery.html">Gallery</a></li>
@@ -28,16 +27,15 @@
           <li><a class="appointment-button" href="booking.html">Book now</a></li>
         </ul>      
         <ul class="nav-container">
-          <li class="hideOnMobile"><a class="active" href="index.html">Home</a></li>
-          <li class="hideOnMobile"><a href="services.html">Services</a></li>
+          <li class="hideOnMobile"><a href="index.html">Home</a></li>
+          <li class="hideOnMobile"><a class="active" href="services.html">Services</a></li>
           <li class="hideOnMobile"><a href="gallery.html">Gallery</a></li>
           <li class="hideOnMobile"><a href="contact.html">Contact Us</a></li>         
-          <li class="menu-button" onclick=showSidebar()><svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#c9ac55"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></li>
+          <li class="menu-button" onclick=showSidebar()><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#c9ac55"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></li>
         </ul>          
       </nav>
       <a class="appointment-button-header" href="booking.html">Book now</a>
     </header>
-
 
     <main id="services-page-main-container">
       <div class="snazzy-paws"><h1>Snazzy Paws Grooming Services</h1></div>
@@ -70,16 +68,16 @@
         <h2>What we offer</h2>
         <div class="packages-container">       
           <div>
-            <img src="images/1.png" alt="basic-grooming">
+            <img src="images/services (1).svg" alt="basic-grooming">
           </div>       
           <div>
-            <img src="images/2.png" alt="specialty-services">       
+            <img src="images/services (2).svg" alt="specialty-services">       
           </div>       
           <div>
-            <img src="images/3.png" alt="premium-packages">
+            <img src="images/services (3).svg" alt="premium-packages">
           </div>       
           <div>
-            <img src="images/4.png" alt="add-ons-&-treatments">
+            <img src="images/services (4).svg" alt="add-ons-&-treatments">
           </div>
         </div>
       </section>
@@ -94,7 +92,7 @@
           <h2>Our grooming services</h2>        
           <div class="row">
             <div class="services-container">
-              <h2>Basic grooming services</h2>
+              <h3>Basic grooming services</h3>
               <div class="services">
                 <div class="service">
                   <div class="service-and-price">
@@ -134,7 +132,7 @@
               </div>                        
             </div>
             <div class="services-container">
-              <h2>Add-ons & Treatments</h2>
+              <h3>Add-ons & Treatments</h3>
               <div class="services">
                 <div class="service">
                   <div class="service-and-price">
@@ -170,12 +168,12 @@
 
           <div class="row">
             <div class="services-container">
-              <h2>Premium packages</h2>
+              <h3>Premium packages</h3>
               <div class="services">
                 <div class="service">
                   <div class="service-and-price">
-                    <span class="service-name">Spa Package</span>
-                    <span class="service-price">$75-$150</span>
+                    <p class="service-name">Spa Package</p>
+                    <p class="service-price">$75-$150</p>
                   </div>
                   <p class="service-description">Includes bath, haircut, teeth brushing, nail trim, and premium scents or conditioners.</p>
                 </div>                                
@@ -183,20 +181,20 @@
               <div class="services">
                 <div class="service">
                   <div class="service-and-price">
-                    <span class="service-name">Full Grooming Package</span>
-                    <span class="service-price">$60-$120</span>
+                    <p class="service-name">Full Grooming Package</p>
+                    <p class="service-price">$60-$120</p>
                   </div>
                   <p class="service-description">Comprehensive service including bath, haircut, teeth brushing, nail trim, and ear cleaning.</p>
                 </div>                                
               </div>                             
             </div>
             <div class="services-container">
-              <h2>Specialty services</h2>
+              <h3>Specialty services</h3>
               <div class="services">
                 <div class="service">
                   <div class="service-and-price">
-                    <span class="service-name">Special-Breed Cuts</span>
-                    <span class="service-price">Quoted after consultation.</span>
+                    <p class="service-name">Special-Breed Cuts</p>
+                    <p class="service-price">Quoted after consultation.</p>
                   </div>
                   <p class="service-description">Customized cuts or styling based on breed or owner's preference.</p>
                 </div>                                
@@ -204,8 +202,8 @@
               <div class="services">
                 <div class="service">
                   <div class="service-and-price">
-                    <span class="service-name">Puppy Package</span>
-                    <span class="service-price">$30-$60</span>
+                    <p class="service-name">Puppy Package</p>
+                    <p class="service-price">$30-$60</p>
                   </div>
                   <p class="service-description">Introductory grooming for puppies to get them accustomed to the process.</p>
                 </div>                                
@@ -213,8 +211,8 @@
               <div class="services">
                 <div class="service">
                   <div class="service-and-price">
-                    <span class="service-name">Senior Dog Package</span>
-                    <span class="service-price">$40-$80</span>
+                    <p class="service-name">Senior Dog Package</p>
+                    <p class="service-price">$40-$80</p>
                   </div>
                   <p class="service-description">Tailored services for older dogs, focusing on comfort and special handling.</p>
                 </div>                                
@@ -262,7 +260,7 @@
         <!--Column One-->
         <div class="footer-container-one">
           <a href="index.html">
-            <img class="footer-logo" src="images/logo.png" alt="logo">
+            <img class="footer-logo" src="images/logo.svg" alt="logo">
           </a>
           <div class="social-media-icons-conatiner">
             <img class="facebook-icon" src="images/icons8-facebook-50.png" alt="facebook-icon icon">

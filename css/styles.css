@@ -336,7 +336,7 @@ nav li{
 .services-section {
   padding: 40px 20px; 
   text-align: center;
-  background-image: url('../images/background-\(3\).webp');
+  background-image: url('../images/background\(3\).webp');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -408,7 +408,7 @@ nav li{
   align-items: center; 
   text-align: center;
   padding: 3%;
-  background-image: url('../images/background-\(5\).webp');
+  background-image: url('../images/background\(5\).webp');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -522,7 +522,7 @@ nav li{
 /*====================================== Story Section ======================================*/
 .background-story-section {
   padding: 50px;
-  background-image: url('../images/background-\(4\).webp');
+  background-image: url('../images/background\(4\).webp');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -587,8 +587,7 @@ nav li{
 }
 
 .what-we-offer-section {
-  margin: 20px;
-  padding: 40px 20px; 
+  margin-top: 50px;
   text-align: center;
 }
 
@@ -603,15 +602,16 @@ nav li{
 }
 
 .dog-grooming-container{
-  background-image:url('../images/white-background.png');
+  background-image:url('../images/background\(1\).webp');
   background-size: cover;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
   margin-top: 100px;
+  padding-top: 50px;
   border-radius: 25px;
 }
 
-.dog-grooming-contain h2{
-  color: #2c3e50;
+.dog-grooming-container h2{
+  text-align: center;
 }
 
 
@@ -622,11 +622,10 @@ nav li{
  }
 
 
-.services-container h2 {
+.services-container h3 {
   font-family: 'Raleway', sans-serif;
-  font-size: 1.3rem;
   color: #2c3e50; 
-  text-align: center;
+  text-align: left;
   margin-bottom: 20px;
   text-transform: uppercase; 
   letter-spacing: 2px;
@@ -635,13 +634,7 @@ nav li{
 
 .row{
   display: flex;
-  justify-content: space-around;
-
-}
-
-.row h2{
-  font-family: 'Lato', sans-serif;
-  text-align: left;
+  justify-content: space-between;
 }
 
 .services {
@@ -653,7 +646,6 @@ nav li{
   margin-bottom: 5px;
 }
 
-/* Styling the service and price container */
 .service-and-price {
   display: flex;
   flex-wrap: wrap;
@@ -664,14 +656,12 @@ nav li{
   padding: 5px 0;
 }
 
-/* Service name */
 .service-and-price .service-name {
   font-family: 'Pacifico', cursive;
   font-size: 1.5rem;
   color: #2c3e50;
 }
 
-/* Service price */
 .service-and-price .service-price {
   font-family: 'Lato', sans-serif;
   font-size: 1.2rem;
@@ -679,7 +669,6 @@ nav li{
   color: #e67e22;
 }
 
-/* Description */
 .service-description {
   margin-top: 10px;
   font-size: 1rem;
@@ -687,7 +676,7 @@ nav li{
 }
 
 .contact-section {
-  background-image: url('../images/background\(3\).png');
+  background-image: url('../images/background\(5\).webp');
   background-size: cover;
 }
 
@@ -698,7 +687,7 @@ nav li{
   flex-wrap: wrap;
   width: 800px;
   margin: 110px auto;
-  background-image:url('../images/background.png');
+  background-image:url('../images/background\(2\).webp');
   background-size: cover;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -710,7 +699,7 @@ nav li{
 }
 .form-container {
   padding: 50px;
-  background-image:url('../images/bg.png');
+  background-image:url('../images/yellow-background.webp');
   background-size: cover;
 }
 
@@ -1163,8 +1152,7 @@ footer p {
 
   /*================== Buttons ==================*/
   .appointment-button {
-    padding: 10px 20px;
-    
+    padding: 10px 20px; 
   }
   
   /*================== Hero section ==================*/
@@ -1270,14 +1258,16 @@ footer p {
 
   .dog-grooming-section h2{
     text-align: center;
+    margin-bottom: 20px;
   }
 
   .dog-grooming-container {
-    padding: 20px 0px 0px 0px;
+  
+    align-items: center;
   }
 
   .services-container {
-    width: 85%;
+    width: 100%;
     padding: 0;
   }
 
@@ -1290,16 +1280,16 @@ footer p {
   }
 
   .service-and-price .service-name {
-    font-size: 20px;
+    font-size: 1.2em;
     
   }
 
   .service-and-price .service-price {
-    font-size: 20px;  
+    font-size: 1.2em;  
   }
 
   .service-description {
-    font-size:15px;
+    font-size:1.0em;
   }
 
   .service {
@@ -1500,11 +1490,36 @@ footer p {
 
   /*================== Dog grooming section ==================*/
   .dog-grooming-section {
-    padding: 5px;
+   padding: 0px;
+   margin: 0px;
   }
 
-  .dog-grooming-services-container {
+  
+  .dog-grooming-container {
     width: 100%;
+  }
+
+  .services-container {
+    width: 75%;
+    
+  }
+
+  .service {
+    width: 100%;
+   
+  }
+
+  .services-container h3 {
+    text-align: left;
+  }
+
+  .service-and-price .service-name {
+    font-size: 1.2em;
+  }
+  
+  .service-and-price .service-price {
+    font-size: 1.2em;
+    
   }
 
   /*================== Gallery ==================*/
