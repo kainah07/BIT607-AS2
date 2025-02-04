@@ -5,14 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Snazzy Paws Grooming offers expert pet grooming services in Hamilton, New Zealand. Book an appointment today for a happy, healthy pet!">
     <title>Services</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <!--fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Damion&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap" rel="stylesheet">
 
+    <!-- Preload important fonts -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" as="style">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" as="style">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap" as="style">
+
+    <!-- Consolidated fonts request -->
+    <link href="https://fonts.googleapis.com/css2?family=Damion&family=Roboto:ital,wght@0,100..900;1,100..900&family=Lato:wght@400;700&family=Pacifico&family=Raleway:wght@600&display=swap" rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/styles.css" media="print" onload="this.media='all'">
+
+
+    <link rel="preload" href="images/dog-image(2).webp" as="image">
   </head>
   <body>
 
@@ -38,7 +46,7 @@
       <a class="appointment-button-header" href="booking.html">Book now</a>
     </header>
 
-    <main id="services-page-main-container">
+    <main>
       <div class="snazzy-paws"><h1>Snazzy Paws Grooming Services</h1></div>
       <section class="educational-container">
         <div class="tips-container">
@@ -47,7 +55,7 @@
           <p>Check out these helpful guides and resources to get started!</p>
           <a class="border-button-small" href="#">View more</a>
         </div>       
-        <img src="images/dog-image(2).webp" width="427" height="299" alt="photo">        
+        <img src="images/dog-image(2).webp" width="427" height="299" alt="photo" loading="lazy">        
       </section>
 
       <!--Gift Voucher-->
