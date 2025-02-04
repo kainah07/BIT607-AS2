@@ -11,7 +11,7 @@ body {
   font-family: 'Roboto', sans-serif;
   line-height: 1.6;
   color: #363636;
-  background-image:url('../images/main-background.webp');
+  background-image:url('../images/main-bg\ \(1\).png');
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -156,7 +156,7 @@ nav li{
 .appointment-button-header {
   font-size: 15px;
   text-decoration: none;
-  background-color: #c9ac55;
+  background-color: #d4af37;
   color: #ffffff;
   padding: 12px 30px;
   border-radius: 5px;
@@ -165,8 +165,8 @@ nav li{
 }
 
 .appointment-button-header:hover {
-  color: #c9ac55;
-  border: 2px solid #c9ac55;
+  color: #d4af37;
+  border: 2px solid #d4af37;
   background-color: transparent;
 }
 
@@ -174,7 +174,7 @@ nav li{
 .appointment-button {
   font-size: 15px;
   text-decoration: none;
-  background-color: #c9ac55;
+  background-color: #d4af37;
   color: #ffffff;
   padding: 12px 25px;
   border-radius: 5px;
@@ -183,17 +183,17 @@ nav li{
 }
 
 .appointment-button:hover {
-  color: #c9ac55;
-  border: 2px solid #c9ac55;
+  color: #d4af37;
+  border: 2px solid #d4af37;
   background-color: transparent;
 }
 
 .border-button {
   text-decoration: none;
   background-color: #ffffff;
-  color: #c9ac55;
+  color: #d4af37;
   padding: 12px 30px;
-  border: 2px solid #c9ac55;
+  border: 2px solid #d4af37;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s;
@@ -210,9 +210,9 @@ nav li{
   font-size: small;
   text-decoration: none;
   background-color: #fff;
-  color: #c9ac55;
+  color: #d4af37;
   padding: 3px 20px;
-  border: 1px solid #c9ac55;
+  border: 1px solid #d4af37;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
@@ -225,7 +225,7 @@ nav li{
 
 .button {
   margin-top: 10px;
-  background-color: #c9ac55; 
+  background-color: #d4af37; 
   color: white;
   padding: 12px 30px;
   border: none;
@@ -242,7 +242,7 @@ nav li{
   margin-top: 10px;
   font-size: small;
   text-decoration: none;
-  background-color: #c9ac55; 
+  background-color: #d4af37; 
   color: white;
   padding: 3px 20px;
   border: none;
@@ -296,7 +296,7 @@ nav li{
   justify-content: center;
   align-items: center;
   padding: 20px 20px;
-  background-image: url('../images/bg.webp');
+  background-image: url('../images/yellow-background.png');
   background-size: cover;
   color: #333;
   text-align: center;
@@ -428,7 +428,7 @@ nav li{
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center; 
-  background-color: #e2ce75;
+  background-color: #c9ac55;
   text-align: left;
   width: 80%; 
   max-width: 800px; 
@@ -988,7 +988,7 @@ div.desc p {
   padding: 12px;
   width: 100%;
   font-size: 16px;
-  background-color: #c9ac55;
+  background-color: #d4af37;
   color: #fff;
   border: none;
   border-radius: 4px;
@@ -1024,7 +1024,7 @@ div.desc p {
 /*====================================== Footer ======================================*/
 /* Footer */
 footer {
-  background-color: #c9ac55;
+  background-color: #d4af37;
   padding: 20px;
   color: #ffffff;  
 }
