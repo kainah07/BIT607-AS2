@@ -416,35 +416,30 @@ nav li{
 /* Slider Container */
 .slider {
   position: relative;
-  width: 80%; 
   overflow: hidden; 
-  margin: auto; 
+  padding: 10px;
 }
 
 .testimony-container {
   border-radius: 30px;
-  padding: 2%;
+  padding: 20px;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center; 
   background-color: #c9ac55;
   text-align: left;
-  width: 80%; 
-  max-width: 800px; 
+  width: 100%; 
+  max-width: 700px; 
   height: auto; 
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   margin: auto;
 }
 
-/* Testimonial Image */
 .testimony-container img {
   border-radius: 25px;
-  background-color: #ebebeb;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   
 }
-
 
 .testimony {
   padding: 25px;
@@ -468,15 +463,15 @@ nav li{
   position: absolute; 
   top: 50%; 
   transform: translateY(-50%); 
-  width: 40px; 
-  height: 40px;
+  width: 50px; 
+  height: 50px;
   display: flex;
   justify-content: center; 
   align-items: center; 
   color: white;
   background-color: #3f3f3f73; 
   border-radius: 3px; 
-  font-size: 24px; 
+  font-size: 30px; 
   font-weight: bold;
   transition: background-color 0.3s ease;
   user-select: none; 
@@ -493,8 +488,8 @@ nav li{
 
 /* Arrow hover effect */
 .prev:hover, .next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-  color: #e2ce75;
+  background-color: rgba(0, 0, 0, 0.555);
+  color: #ffffff;
 }
 
 /* Indicators */
@@ -503,14 +498,14 @@ nav li{
   height: 15px;
   width: 15px;
   margin: 20px 2px;
-  background-color: #00000065;
+  background-color: #36363665;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
 }
 
 .active, .dot:hover {
-  background-color: #e0e0e0;
+  background-color: #00000093;
 }
 
 /* Fading animation */
@@ -536,15 +531,12 @@ nav li{
 }
 .story-container {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-around;
   padding: 50px;
   gap: 50px;
 }
 
 .story-container img {
-  display: block; 
-  margin: 0 auto; 
   border-radius: 10px; 
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
 }
@@ -1188,24 +1180,25 @@ footer p {
 
   /*================== Testimonials section ==================*/
   .testimonial-section {
-    flex-direction: column; 
     align-items: center; 
   }
 
+  .slider {
+    padding: 10px;
+  }
+
   .testimony-container {
-    padding: 20px;
-    width: 300px;
-    height: 600px;
+   width: 100%;
+    height: 100%;
   }
 
   .testimony-container img {
-    width: 100%;
+    width: 50%;
     height: 50%;
   }
 
   .testimony {
     width: 100%;
-    height: 50%;
   }
 
   /*================== Story section ==================*/
@@ -1434,7 +1427,7 @@ footer p {
   }
 
   .hero-section img {
-    width: 80%;
+    width: 60%;
   }
 
   .gift-voucher-container img {
@@ -1443,43 +1436,50 @@ footer p {
   }
 
   /*================== Testimony section ==================*/
+  .slider {
+    padding: 35px;
+  }
+  
   .testimony-container {
-    padding: 15px;
-    width: 250px;
-    height: 550px;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
   }
 
   .testimony-container img {
     width: 100%;
-    height: 45%;
+    height: 100%;
   }
 
   .testimony {
     width: 100%;
-    height: 50%;
+    height: 100%;
+  }
+
+  .prev, .next { 
+    width: 40px; 
+    height: 40px;
+    font-size: 30px; 
+  }
+
+  .dot {
+    width: 10px;
+    height: 10px;
   }
   
   /*================== Story section ==================*/
   .story-container {
-    padding: 10px;
+    padding: 20px;
     flex-direction: column;
   }
 
   .story-container img {
-    width: 90%;
-    height: 50%;
+    height: 100%;
+    width: 100%;
   }
 
   .story-content {
-    width: 90%;
-  }
-
-  .services-container {
-    text-align: center;
-  }
-
-  .what-we-offer-section {
-    margin: 0px;
+    width: 100%;
   }
 
   /*================== Dog grooming section ==================*/
