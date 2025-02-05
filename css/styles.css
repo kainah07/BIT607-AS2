@@ -306,10 +306,10 @@ nav li{
 /*====================================== Hero Section ======================================*/
 /*Hero section*/
 .hero-section {
-  height: 100vh;
   display: flex;
   justify-content: center;
   gap: 10%;
+  padding: 50px;
 }
 
 .hero-contents {
@@ -333,9 +333,7 @@ nav li{
   margin-bottom: 5%;
 }
 
-.hero-section img {
-  margin-top: 5%;
-}
+
 
 /*====================================== About Section ======================================*/
 .about-us-section {
@@ -785,6 +783,7 @@ nav li{
 
 /*====================================== Gallery ======================================*/
 .con{
+  padding: 50px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -822,8 +821,7 @@ nav li{
   display: flex;
   flex-direction: column; 
   align-items: center; 
-  background-image: url('../images/background\(3\).webp');
-  background-size: cover;
+  background-color: #d4af37;
 }
 
 .video h2 {
@@ -904,7 +902,7 @@ nav li{
   flex-wrap: wrap;
   width: 800px;
   margin: 110px auto;
-  background-image:url('../images/bg.png');
+  background-image:url('../images/yellow-background.webp');
   background-size: cover;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -912,7 +910,7 @@ nav li{
 
 .contact-details-container {
   padding: 50px;
-  background-image:url('../images/white-background.png');
+  background-image:url('../images/background\(2\).webp');
 }
 
 .contact-details-container h2{
@@ -949,7 +947,7 @@ nav li{
 
 .booking-form-container {
   display: flex;
-  background-image: url('../images/white-background.png');
+  background-image: url('../images/background\(2\).webp');
   align-items: center;
 }
 
@@ -1022,7 +1020,7 @@ nav li{
   width: 50%;
   height: 100%;
   padding: 20px;
-  background-image: url('../images/bg.png');
+  background-image: url('../images/yellow-background.webp');
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
 
