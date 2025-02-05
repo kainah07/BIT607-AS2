@@ -1146,9 +1146,8 @@ footer p {
     font-size: 1.3em;
   }
 
-  .about-us-contents p {
+  .quick-links-container a {
     font-size: 1em;
-    
   }
 
   .logo {
@@ -1199,7 +1198,7 @@ footer p {
   }
 
   .gift-voucher-details {
-    text-align: left;
+    text-align: center;
   }
 
   /*================== Testimonials section ==================*/
@@ -1627,4 +1626,5 @@ footer p {
   .footer-row-one {
     flex-direction:column;
   }
+
 }
