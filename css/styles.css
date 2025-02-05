@@ -156,6 +156,7 @@ nav li{
 }
 
 .sidebar a {
+  font-size: 20px;
   text-decoration: none;
   color: #363636;
 }
@@ -280,7 +281,6 @@ nav li{
 .hero-section {
   height: 100vh;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   gap: 10%;
 }
@@ -1143,7 +1143,7 @@ footer p {
   }
 
   .hero-section p {
-    font-size: 1em;
+    font-size: 1.3em;
   }
 
   .about-us-contents p {
@@ -1164,8 +1164,7 @@ footer p {
   
   /*================== Hero section ==================*/
   .hero-section {
-    padding: 10px 10px 0px 10px;
-    margin-top: 50px;
+    padding: 10px;
     flex-direction: column;
     align-items: center;
   }
@@ -1180,8 +1179,8 @@ footer p {
   }
 
   .hero-section img {
-    width: 50%;
-    height: 50%;
+    margin-top: 0px;
+    width: 100%;
   }
 
   /*================== About us section ==================*/
@@ -1195,8 +1194,12 @@ footer p {
     height: 70%;
   }
 
-   .gift-voucher-details, .gift-voucher-details h2 {
+   .gift-voucher-details h2 {
     text-align: center;
+  }
+
+  .gift-voucher-details {
+    text-align: left;
   }
 
   /*================== Testimonials section ==================*/
@@ -1417,30 +1420,25 @@ footer p {
 
   /*================== Hero section ==================*/
   .hero-section {
-    margin-top: 50px;
-    margin-left: 15px;
-    margin-right: 15px;
     flex-direction: column;
     text-align: center;
   }
 
-  .hero-section p {
-    font-size: 0.875em;
-    text-align: center;
+  .hero-section h1 {
+    font-size: 2.0em;
   }
 
-  .hero-text-container {
-    margin-bottom: 10px;
+  .hero-section p {
+    font-size: 1.0em;
     text-align: center;
   }
 
   .hero-section .appointment-button {
-    padding: 5px 10px;
-    
+    padding: 5px 10px; 
   }
 
   .hero-section img {
-    width: 60%;
+    width: 90%;
   }
 
   .gift-voucher-container img {
