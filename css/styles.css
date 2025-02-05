@@ -1182,7 +1182,7 @@ footer p {
   
   /*================== Hero section ==================*/
   .hero-section {
-    padding: 10px;
+    padding: 100px;
     flex-direction: column;
     align-items: center;
   }
@@ -1197,8 +1197,8 @@ footer p {
   }
 
   .hero-section img {
-    margin-top: 0px;
-    width: 100%;
+    margin-top: 20px;
+    width: 80%;
   }
 
   /*================== About us section ==================*/
@@ -1319,8 +1319,8 @@ footer p {
 
   /*================== Gallery page ==================*/
   .con img {
-    width: 40%;
-    height: 40%;
+    width: 50%;
+    height: 50%;
   }
   .con-text-container {
     padding: 20px;
@@ -1442,6 +1442,7 @@ footer p {
 
   /*================== Hero section ==================*/
   .hero-section {
+    padding: 0px;
     flex-direction: column;
     text-align: center;
   }
