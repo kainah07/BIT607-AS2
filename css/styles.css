@@ -812,12 +812,6 @@ nav li{
   color: #333333;
 }
 
-.con img {
-  width: 500px;
-  height: auto;
- 
-}
-
 .gallery-main-container h2{
   margin: 50px;
 }
@@ -828,7 +822,7 @@ nav li{
   display: flex;
   flex-direction: column; 
   align-items: center; 
-  background-image: url('../images/bg.png');
+  background-image: url('../images/background\(3\).webp');
   background-size: cover;
 }
 
@@ -1326,6 +1320,10 @@ footer p {
   }
 
   /*================== Gallery page ==================*/
+  .con img {
+    width: 40%;
+    height: 40%;
+  }
   .con-text-container {
     padding: 20px;
     text-align: center;     
@@ -1572,6 +1570,11 @@ footer p {
   }
 
   /*================== Gallery ==================*/
+  .con img {
+    width: 60%;
+    height: 60%;
+  }
+
   .video iframe {
     max-width: 100%; 
     height: auto;
