@@ -621,7 +621,7 @@ nav li{
 
 .row{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .services {
