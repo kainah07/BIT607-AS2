@@ -20,6 +20,19 @@ body {
   
 }
 
+@font-face {
+  font-family: 'Damion';
+  src: url('/fonts/damion.woff2') format('woff2');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('/fonts/roboto.woff2') format('woff2');
+  font-display: swap;
+}
+
+
 h1 {
   font-size: 2.5em; 
 }
