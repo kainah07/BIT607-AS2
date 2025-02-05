@@ -258,6 +258,7 @@ nav li{
 /*====================================== Hero Section ======================================*/
 /*Hero section*/
 .hero-section {
+  height: 100vh;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -468,10 +469,10 @@ nav li{
   display: flex;
   justify-content: center; 
   align-items: center; 
-  color: white;
-  background-color: #3f3f3f73; 
+  color: #ffffff; 
+  background-color: #00000050;
   border-radius: 3px; 
-  font-size: 30px; 
+  font-size: 45px; 
   font-weight: bold;
   transition: background-color 0.3s ease;
   user-select: none; 
