@@ -5,14 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Snazzy Paws Grooming offers expert pet grooming services in Hamilton, New Zealand. Book an appointment today for a happy, healthy pet!">
     <title>Snazzy Paws Grooming</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Damion&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
-    <!-- Link to your main stylesheet -->
-    <link rel="stylesheet" href="css/styles.css">
+    <!-- Preload Google Fonts -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Damion&family=Roboto:wght@100..900&display=swap" as="style">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Damion&family=Roboto:wght@100..900&display=swap">
+
+    <!-- Asynchronously Load Styles -->
+    <link rel="stylesheet" href="css/styles.css" media="print" onload="this.onload=null;this.media='all';">
+
+    <!-- Preload important images -->
     <link rel="preload" href="images/yellow-background.webp" as="image" type="image/webp" />
   </head>
+
   <body>
 
     <!--Navigation bar-->
