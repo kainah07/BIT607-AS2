@@ -813,14 +813,8 @@ nav li{
 
 .con p {
   text-align: left;
-  font-family:'Raleway', sans-serif;
   color: #333333;
 }
-
-.gallery-main-container h2{
-  margin: 50px;
-}
-
 
 .video {
   padding: 30px;
@@ -855,6 +849,7 @@ nav li{
   float: left;
   width: 200px;
   background-color: #ffffff;
+  border-radius: 15px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -865,6 +860,7 @@ nav li{
 .gallery img {
   width: 100%;
   height: auto;
+  border-radius: 15px 15px 0px 0px;
 }
 
 .desc {
@@ -880,11 +876,13 @@ nav li{
 
 
 .gallery-container {
-  margin: 50px;
+  margin-top: 50px;
+  margin-bottom: 50px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
- 
+  background-image:url('../images/background\(2\).webp');
+  background-size: cover;
 }
 /*====================================== Contact ======================================*/
 .contact-form-section h1 {
@@ -1439,6 +1437,18 @@ footer p {
 }
 
 @media (max-width: 480px) {
+
+  h1 {
+    font-size: 2.0em;
+  }
+
+  h2 {
+    font-size: 1.5em; 
+  }
+
+  p {
+    font-size: 0.875em; 
+  }
   
   /*================== Sidebar ==================*/
   .sidebar{
@@ -1451,10 +1461,6 @@ footer p {
     padding: 0px;
     flex-direction: column;
     text-align: center;
-  }
-
-  .hero-section h1 {
-    font-size: 2.0em;
   }
 
   .hero-section p {
@@ -1575,9 +1581,12 @@ footer p {
   }
 
   /*================== Gallery ==================*/
+  .con {
+   padding: 0px;
+  }
   .con img {
-    width: 60%;
-    height: 60%;
+    width: 80%;
+    height: 80%;
   }
 
   .video iframe {
