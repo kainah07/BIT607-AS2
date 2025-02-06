@@ -1603,14 +1603,6 @@ footer p {
     margin-bottom: 15px;
   }
 
-  #gallery-main h1 {
-    font-size: 1.5rem; 
-    margin: 20px 0;
-  }
-
-  div.desc p {
-    font-size: 0.9rem;
-  }
 
   /*================== Contact ==================*/
   .contact-form-container {
