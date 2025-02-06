@@ -315,7 +315,7 @@ nav li{
   display: flex;
   justify-content: center;
   gap: 10%;
-  padding: 50px;
+  padding: 100px;
 }
 
 .hero-contents {
@@ -606,7 +606,7 @@ nav li{
 
 /*====================================== Services Page ======================================*/
 .educational-container {
-  padding: 20px;
+  padding: 100px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -789,7 +789,7 @@ nav li{
 
 /*====================================== Gallery ======================================*/
 .con{
-  padding: 50px;
+  padding: 100px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
