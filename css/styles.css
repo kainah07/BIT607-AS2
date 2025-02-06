@@ -1188,19 +1188,16 @@ footer p {
   .contacts-container {
     flex-direction: column;
     gap: 0px;
+    text-align: center;
   }
-
+ 
   .gift-voucher-container img {
     width: 70%;
     height: 70%;
   }
 
-   .gift-voucher-details h2 {
-    text-align: center;
-  }
-
   .gift-voucher-details {
-    text-align: center;
+    padding: 30px;
   }
 
   /*================== Testimonials section ==================*/
@@ -1246,6 +1243,9 @@ footer p {
   }
 
   /*================== Educational section ==================*/
+  .educational-container {
+    padding: 0px;
+  }
   .educational-container img {
     width: 50%;
     height: 50%;
@@ -1301,26 +1301,6 @@ footer p {
   }
 
   /*================== Gallery page ==================*/
-  .con img {
-    width: 50%;
-    height: 50%;
-  }
-  .con-text-container {
-    padding: 20px;
-    text-align: center;     
-  }
-  
-  .con h1 {
-    text-align: center;
-    margin-bottom: 30px;
-   
-  }
-  
-  .con p {
-    text-align: center;
-    font-family:'Raleway', sans-serif;
-    color: #333333;
-  }
 
   .video iframe {
     max-width: 100%; 
@@ -1508,6 +1488,7 @@ footer p {
   }
 
   .educational-container {
+    padding: 0px;
     flex-direction: column-reverse;
   }
 
@@ -1526,6 +1507,8 @@ footer p {
   }
 
   /*================== Dog grooming section ==================*/
+
+
   .dog-grooming-section {
    padding: 0px;
    margin: 0px;
@@ -1560,14 +1543,6 @@ footer p {
   }
 
   /*================== Gallery ==================*/
-  .con {
-   padding: 20px;
-  }
-  .con img {
-    width: 80%;
-    height: 80%;
-  }
-
   .video iframe {
     max-width: 100%; 
     height: auto;
