@@ -5,15 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
     <link rel="stylesheet" href="css/styles.css">
-      <!--fonts-->
-      <link rel="preload" href="https://fonts.googleapis.com/css2?family=Damion&family=Roboto:wght@100..900&display=swap" as="style">
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Damion&family=Roboto:wght@100..900&display=swap">
-
-      <link rel="preload" href="images/yellow-background.webp" as="image">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Damion&family=Roboto:wght@100..900&display=swap" as="style">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Damion&family=Roboto:wght@100..900&display=swap">
+    <link rel="preload" href="images/yellow-background.webp" as="image">
   </head>
   <body>
-
-    <!--Navigation bar-->
     <header>
       <a href="index.html"><img class="logo" src="images/logo-transparent.svg" width="100" height="100" alt="logo"></a>
       <nav>
@@ -35,7 +31,6 @@
       </nav>
       <a class="appointment-button-header" href="booking.html">Book now</a>
     </header>
-
     <main>
       <section class="contact-form-section">
         <h1>Contact Us</h1>
@@ -60,45 +55,38 @@
             <div class="form-group">
               <button type="submit">Send</button>
             </div>
-            </form>
-            <div class="contact-details-container">
-              <div>
-                <h2>Location</h2>
-                <div class="container">
-                  <img src="images/location-pin-svgrepo-com.svg" width="20" height="20" alt="Location icon">
-                  <h4>Hamilton, New Zealand</h4>
-                </div>
-                </div>
-              <div>
-                <h2>Phone</h2>
-                <div class="container">
-                  <img src="images/phone-svgrepo-com.svg" width="20" height="20" alt="Contact number icon">
-                  <h4>64 023 067 95403</h4>
-                </div>
-              </div>
-              <div>
-                <h2>E-mail</h2>
-                <div class="container">
-                  <img src="images/email-message-mail-envelope-svgrepo-com.svg" width="20" height="20" alt="Email icon">
-                  <h4>snazzypawsgrooming@gmail.com</h4>
-                </div>
+          </form>
+          <div class="contact-details-container">
+            <div>
+              <h2>Location</h2>
+              <div class="container">
+                <img src="images/location-pin-svgrepo-com.svg" width="20" height="20" alt="Location icon">
+                <h4>Hamilton, New Zealand</h4>
               </div>
             </div>
+            <div>
+              <h2>Phone</h2>
+              <div class="container">
+                <img src="images/phone-svgrepo-com.svg" width="20" height="20" alt="Contact number icon">
+                <h4>64 023 067 95403</h4>
+              </div>
+            </div>
+            <div>
+              <h2>E-mail</h2>
+              <div class="container">
+                <img src="images/email-message-mail-envelope-svgrepo-com.svg" width="20" height="20" alt="Email icon">
+                <h4>snazzypawsgrooming@gmail.com</h4>
+              </div>
+            </div>
+          </div>
         </div>   
       </section>
-
-      <!-- Google map -->
       <div class="map-container">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d100912.90644625574!2d175.16581766408189!3d-37.77765650500809!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d6d227487a63621%3A0x500ef6143a29903!2sHamilton%2C%20New%20Zealand!5e0!3m2!1sen!2sph!4v1738033969758!5m2!1sen!2sph" width="1000" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
-
     </main>
-
-    <!--Footer-->
     <footer>
-
       <div class="footer-row-one">
-        <!--Column One-->
         <div class="footer-container-one">
           <a href="index.html">
             <img class="footer-logo" src="images/logo.svg" width="100" height="100" alt="logo">
@@ -108,8 +96,6 @@
             <img class="instagram-icon" src="images/icons8-instagram-50.png" width="50" height="50" alt="instagram-con">
           </div>
         </div>
-
-        <!--Column Two-->
         <div class="footer-container-two">
           <h3>About</h3>
           <div class="container">
@@ -129,8 +115,6 @@
             <p>Monday - Saturday: 9AM - 5PM</p>
           </div>
         </div>
-
-        <!--Column Three-->
         <div class="footer-container-three">
           <h3>Quick links</h3>
           <ul class="quick-links-container">
@@ -138,33 +122,23 @@
             <li><a href="services.html">Services</a></li>
             <li><a href="gallery.html">Gallery</a></li>
             <li><a href="contact.html">Contact</a></li>
-        </ul>
+          </ul>
+        </div>
       </div>
-      </div>
-
       <div class="footer-row-two">
         <p>&copy; 2025 Snazzy Paws Grooming. All Rights Reserve</p>
         <a href="">Privacy Policy</a>
       </div>
-
     </footer>
-
-    <!-- Java script for the sidebar -->
     <script defer>
-
-      // opens the sidebar when the menu button is clicked
       function showSidebar() {
           const sidebar = document.querySelector('.sidebar')
           sidebar.style.display = 'flex'
         }
-
-      // close the sidebar when the x button is clicked
       function hideSidebar() {
         const sidebar = document.querySelector('.sidebar')
         sidebar.style.display = 'none'
       }
-
     </script>
-    
   </body>
 </html>
