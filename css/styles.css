@@ -315,7 +315,7 @@ nav li{
   display: flex;
   justify-content: center;
   gap: 10%;
-  padding: 100px;
+  padding: 50px;
 }
 
 .hero-contents {
@@ -338,8 +338,6 @@ nav li{
   color: #333333;
   margin-bottom: 5%;
 }
-
-
 
 /*====================================== About Section ======================================*/
 .about-us-section {
@@ -788,35 +786,16 @@ nav li{
 }
 
 /*====================================== Gallery ======================================*/
-.con{
-  padding: 100px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 10%;
-}
-
-.con-contents {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
-.con-text-container {
-  text-align: left;     
-}
-
-.con h1 {
-  text-align: left;
- 
+.con {
+  margin: 50px;
 }
 
 .con p {
-  text-align: left;
-  color: #333333;
+  text-align: center;
 }
 
 .video {
+  margin-top: 10px;
   padding: 30px;
   display: flex;
   flex-direction: column; 
@@ -1582,7 +1561,7 @@ footer p {
 
   /*================== Gallery ==================*/
   .con {
-   padding: 0px;
+   padding: 20px;
   }
   .con img {
     width: 80%;
@@ -1598,8 +1577,12 @@ footer p {
     grid-template-columns: 1fr; 
   }
 
-  div.gallery {
-    width: 100%; 
+  .gallery-container {
+    padding: 20px;
+  }
+
+ .gallery {
+    width: 90%; 
     margin-bottom: 15px;
   }
 
